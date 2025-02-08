@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books for Breakfast Landing</title>
+  <link rel="stylesheet" href="landingstyles.css">
+  
+  <!-- Google Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+    /* Set background image */
+    body {
+      background: url('bg.jpg') no-repeat center center/cover;
+    }
+  </style>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+</head>
+<body>
+  <!-- Header with Navigation Links -->
+  <header>
+    <nav>
+      <ul>
+        <li><a id="about" href="#about">About</a></li>
+        <li><a id="faq" href="#faq">FAQ's</a></li>
+        <li><a id="contact" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Landing Page Content -->
+  <section id="landing">
+    <div class="landing-content">
+      <h1>Books for Breakfast</h1>
+      <p>Have your morning coffee while feeding your intellectual thoughts, or escaping them.</p>
+      <a id="btn" href="#get-started" class="cta-button">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="current-year"></span> Book Recommendation and Library Organizer. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Insert the current year into the footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    let about=document.getElementById('about');
+    about.addEventListener('click',()=>{
+        alert(`Follow our page: (https:www.instagram.com/booksforbreakfast02?igsh=MTNlMXVoeDNjeGdzYg==})`)
+    });
+    let faq=document.querySelector('#faq');
+    faq.addEventListener('click',()=>{
+        alert(`Got Queries, DM Us at :(https://www.instagram.com/booksforbreakfast02?igsh=MTNlMXVoeDNjeGdzYg==)`)
+    });
+    let contact=document.querySelector('#contact');
+    contact.addEventListener('click',() =>{
+        alert('You can Follow and contact us through our insta id:-(https://www.instagram.com/booksforbreakfast02?igsh=MTNlMXVoeDNjeGdzYg==)')
+    });
+    let btn=document.querySelector('#btn');
+    btn.addEventListener('click',()=>{
+        window.location.href='home.html';
+    });
+  </script>
+</body>
+</html>

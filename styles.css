@@ -1,0 +1,324 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif; /* Use a serif font for body text */
+    margin: 0;
+    padding: 0;
+    background-color: #FFE6A7; /* Light beige for background */
+    color: #432818; /* Dark brown for text */
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #6F1D1B; /* Deep red for header */
+    color: #FFE6A7; /* Light beige for header text */
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    font-family: 'Dancing Script', cursive; /* Use Dancing Script for the header */
+    font-weight: 700;
+  }
+  
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  section {
+    margin-bottom: 2.5rem;
+    background-color: #FFFFFF; /* White for section backgrounds */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #6F1D1B; /* Deep red for section headings */
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive; /* Use Dancing Script for section headings */
+    font-weight: 700;
+    border-bottom: 2px solid #BB9457; /* Gold for accents */
+    padding-bottom: 0.5rem;
+  }
+  
+  input, button {
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Georgia', serif; /* Use serif font for inputs and buttons */
+  }
+  
+  input {
+    width: calc(100% - 1.5rem);
+    max-width: 400px;
+    background-color: #FFFFFF; /* White for input background */
+    border: 1px solid #BB9457; /* Gold for input border */
+  }
+  
+  button {
+    background-color: #99582A; /* Medium brown for buttons */
+    color: #FFE6A7; /* Light beige for button text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #BB9457; /* Gold for button hover */
+  }
+  
+  #recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .book-card {
+    background-color: #FFFFFF; /* White for card background */
+    border: 1px solid #BB9457; /* Gold for card border */
+    border-radius: 10px;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .book-card h3 {
+    color: #432818; /* Dark brown for book titles */
+    font-size: 1.5rem;
+    font-family: 'Dancing Script', cursive; /* Use Dancing Script for book titles */
+    font-weight: 700;
+    margin: 0.5rem 0;
+  }
+  
+  .book-card p {
+    color: #6F1D1B; /* Deep red for author names */
+    font-size: 1rem;
+    font-family: 'Georgia', serif; /* Use serif font for author names */
+    margin: 0.5rem 0;
+  }
+  
+  .book-card button {
+    background-color: #6F1D1B; /* Deep red for add to library button */
+    color: #FFE6A7; /* Light beige for button text */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-card button:hover {
+    background-color: #432818; /* Dark brown for button hover */
+  }
+  
+  .shelf {
+    background-color: #FFFFFF; /* White for shelf background */
+    border: 1px solid #BB9457; /* Gold for shelf border */
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shelf h3 {
+    color: #6F1D1B; /* Deep red for shelf headings */
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive; /* Use Dancing Script for shelf headings */
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #FFE6A7; /* Light beige for list items */
+    border: 1px solid #BB9457; /* Gold for list item borders */
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  li button {
+    background-color: #6F1D1B; /* Deep red for buttons */
+    color: #FFE6A7; /* Light beige for button text */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  li button:hover {
+    background-color: #432818; /* Dark brown for button hover */
+  }
+  
+  /* Genre Buttons Styling */
+  #genre-buttons {
+    margin-bottom: 2rem;
+  }
+  
+  .genre-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  
+  .genre-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #99582A; /* Medium brown for genre buttons */
+    color: #FFE6A7; /* Light beige for button text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-family: 'Georgia', serif; /* Use serif font for genre buttons */
+  }
+  
+  .genre-btn:hover {
+    background-color: #BB9457; /* Gold for button hover */
+  }
+  /* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    overflow: auto;
+  }
+  
+  .modal-content {
+    background-color: #FFFFFF; /* White background for modal */
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #6F1D1B; /* Deep red for close button */
+  }
+  
+  .close-btn:hover {
+    color: #432818; /* Dark brown for hover */
+  }
+  
+  #modal-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #6F1D1B; /* Deep red for title */
+  }
+  
+  #modal-author {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    color: #99582A; /* Medium brown for author */
+    margin: 0.5rem 0;
+  }
+  
+  #modal-description {
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    color: #432818; /* Dark brown for description */
+    line-height: 1.6;
+  }
+  
+  #modal-image {
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  /* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.75rem;
+    }
+  
+    .book-card {
+      width: calc(50% - 1rem); /* 2 cards per row on tablets */
+    }
+  
+    .genre-buttons-container {
+      justify-content: center;
+    }
+  
+    .genre-btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.75rem;
+      }
+    
+      h2 {
+        font-size: 1.5rem;
+      }
+    
+      .book-card {
+        width: 100%; /* 1 card per row on mobile */
+      }
+    
+      .modal-content {
+        width: 90%;
+        margin: 20% auto;
+      }
+    }
+    /* Footer Styles */
+footer {
+    background-color: #6F1D1B; /* Deep red for footer background */
+    color: #FFE6A7; /* Light beige for footer text */
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  @media (max-width: 480px) {
+    footer {
+      padding: 0.75rem;
+      font-size: 0.8rem;
+    }
+  }

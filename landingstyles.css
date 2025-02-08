@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    color: #432818;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #6F1D1B;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #FFE6A7;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #BB9457;
+  }
+  
+  /* Landing Section Styles */
+  #landing {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #432818;
+    padding: 0 1rem;
+  }
+  
+  .landing-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .landing-content h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    margin: 0 0 1rem 0;
+    color: #6F1D1B;
+  }
+  
+  .landing-content p {
+    font-size: 1.2rem;
+    margin: 0 0 2rem 0;
+  }
+  
+  .cta-button {
+    background-color: #99582A;
+    color: #FFE6A7;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #BB9457;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #6F1D1B;
+    color: #FFE6A7;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Georgia', serif;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .landing-content h1 {
+      font-size: 3rem;
+    }
+  
+    .landing-content p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .landing-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .landing-content p {
+      font-size: 0.9rem;
+    }
+  
+    .cta-button {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+  }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books for Breakfast</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Books For Breakfast</h1>
+  </header>
+
+  <main>
+    <!-- Search and Recommendations Section -->
+    <section id="search-section">
+      <h2>Search for Books</h2>
+      <input type="text" id="search-input" placeholder="Find Your Breakfast!" required>
+      <button id="search-btn">Search</button>
+      <div id="recommendations"></div>
+    </section>
+    <!-- Modal for Book Details -->
+<div id="book-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-author"></p>
+      <p id="modal-description"></p>
+      <img id="modal-image" src="" alt="Book Cover" style="max-width: 200px; margin: 1rem 0;">
+    </div>
+  </div>
+    <!-- Genre Buttons Section -->
+<section id="genre-buttons">
+    <h2>Explore by Genre</h2>
+    <div class="genre-buttons-container">
+      <button class="genre-btn" data-genre="romance">Romance</button>
+      <button class="genre-btn" data-genre="thriller">Thriller</button>
+      <button class="genre-btn" data-genre="fantasy">Fantasy</button>
+      <button class="genre-btn" data-genre="mystery">Mystery</button>
+      <button class="genre-btn" data-genre="science fiction">Science Fiction</button>
+      <button class="genre-btn" data-genre="biography">Biography</button>
+    </div>
+  </section>
+
+    <!-- Library Organization Section -->
+    <section id="library-section">
+      <h2>My Library</h2>
+      <div id="shelves">
+        <div class="shelf" id="to-read">
+          <h3>To Read</h3>
+          <ul id="to-read-list"></ul>
+        </div>
+        <div class="shelf" id="in-progress">
+          <h3>In Progress</h3>
+          <ul id="in-progress-list"></ul>
+        </div>
+        <div class="shelf" id="completed">
+          <h3>Completed</h3>
+          <ul id="completed-list"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+   <!-- Footer -->
+   <footer>
+    <p>&copy; 2025 Books for Breakfast. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
